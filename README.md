@@ -9,7 +9,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-[Elk Stack Links](https://github.com/tebassett/Elk_Stack/tree/main/Ansible)
+[Elk Stack Files](https://github.com/tebassett/Elk_Stack/tree/main/Ansible)
 
 This document contains the following details:
 - Description of the Topology
@@ -20,7 +20,7 @@ This document contains the following details:
 - How to Use the Ansible Build
 
 
-### Description of the Topology
+## **Description of the Topology**
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
@@ -37,7 +37,7 @@ The configuration details of each machine may be found below.
 | Web-2     | Server   | 10.0.0.6   | Linux Ubuntu 18.04.1 |
 | Elk Stack | Monitor  | 10.1.0.4   | Linux Ubuntu 18.04.1 |
 
-### Access Policies
+## Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
@@ -55,7 +55,7 @@ A summary of the access policies in place can be found in the table below.
 | Web-2     | No                  | 10.0.0.4             |
 | Elk Stack | Port 5601 Only      | 77.179.27.132        |
 
-### Elk Configuration
+## **Elk Configuration**
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because automated configuration efficaciously reduces the potential for human error during configuration. It also ensures uniform configuration across a shared resource group. 
 
@@ -71,21 +71,21 @@ The following screenshot displays the result of running `docker ps` after succes
 
 ![](https://github.com/tebassett/Elk_Stack/blob/main/Images/docker_ps_output.PNG)
 
-### Target Machines & Beats
+## **Target Machines & Beats**
 This ELK server is configured to monitor the following machines:
 - Web-1 10.0.0.5
 - Web-2 10.0.0.6
 
 We have installed the following Beats on these machines:
-- Filebeat
-- Metricbeat
+> Filebeat
+> Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- `Filebeat` forwards and centralizes log data. Specifically, it monitors the server's log files and/or locations specified by the user, collects the log events, and then forwards them to Elasticsearch for indexing.
+> `Filebeat` forwards and centralizes log data. Specifically, it monitors the server's log files and/or locations specified by the user, collects the log events, and then forwards them to Elasticsearch for indexing.
 
-- `Metricbeat` periodically collects metrics from the OS and running server services. These collected data sets are then fowarded to Elasticsearch for output.
+> `Metricbeat` periodically collects metrics from the OS and running server services. These collected data sets are then fowarded to Elasticsearch for output.
 
-### Using the Playbook
+## **Using the Playbook**
 In order to use the `Filebeat` playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
@@ -96,7 +96,7 @@ SSH into the control node and follow the steps below:
 
 - Now repeat steps 1-3 for `Metricbeat`. For step 4, after you run the plabook navigate to `YOUR_ELK_PUBLIC_IP:5601/app/kibana`, under `Metrics`, click `Add metric data`. Then click `Docker metrics`. Under `Getting Started` select `DEB`. Scroll to the bottom to `Module status` and click `Check data`. If the connection was successful, you will see `Data successfully received from this module`. 
 
-#### Helping Hand
+### **Helping Hand**
 Useful commands for playbook and config file: 
 
 - `sudo nano SPECIFIC_BEAT-config.yml` to edit the config file
