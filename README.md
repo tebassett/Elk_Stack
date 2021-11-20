@@ -95,7 +95,7 @@ SSH into the control node and follow the steps below:
 1. Copy the configuration file `filebeat-config.yml` to `/etc/ansible/files`.
 2. Copy the playbook file `filebeat-playbook.yml` to `/etc/ansible/roles`. 
 3. Update the `filebeat-config.yml` file to include `output.elasticsearch` as hosts `["YOUR_ELK_HIDDEN_IP:9200"]`. Leave `username:  "elastic"` and `password: "changme"` as they are.  Also update `setup.kibana` as `host:  "YOUR_ELK_HIDDEN_IP:9200"`.
-4. Run the playbook, and navigate to `YOUR_ELK_PUBLIC_IP:5601/app/kibana` to check that the installation worked as expected. Under `Logs`, click `Add log data`. Then click `System logs`. Under `Getting Started` select `DEB`. Scroll to the bottom to `Module status` and click `Check data`. If the connection was successful, you will see `Data successfully received from this module`. 
+4. Run the playbook, and with a web browser, navigate to `YOUR_ELK_PUBLIC_IP:5601/app/kibana` to check that the installation worked as expected. Under `Logs`, click `Add log data`. Then click `System logs`. Under `Getting Started` select `DEB`. Scroll to the bottom to `Module status` and click `Check data`. If the connection was successful, you will see `Data successfully received from this module`. 
 
 - Now repeat steps 1-3 for `Metricbeat`. For step 4, after you run the plabook navigate to `YOUR_ELK_PUBLIC_IP:5601/app/kibana`, under `Metrics`, click `Add metric data`. Then click `Docker metrics`. Under `Getting Started` select `DEB`. Scroll to the bottom to `Module status` and click `Check data`. If the connection was successful, you will see `Data successfully received from this module`. 
 
