@@ -83,9 +83,9 @@ We have installed the following Beats on these machines:
 - Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-> `Filebeat` forwards and centralizes log data. Specifically, it monitors the server's log files and/or locations specified by the user, collects the log events, and then forwards them to Elasticsearch for indexing.
+`Filebeat` forwards and centralizes log data. Specifically, it monitors the server's log files and/or locations specified by the user, collects the log events, and then forwards them to Elasticsearch for indexing.
 
-> `Metricbeat` periodically collects metrics from the OS and running server services. These collected data sets are then fowarded to Elasticsearch for output.
+`Metricbeat` periodically collects metrics from the OS and running server services. These collected data sets are then fowarded to Elasticsearch for output.
 
 
 ## **Using the Beats Playbooks**
