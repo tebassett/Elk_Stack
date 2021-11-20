@@ -5,7 +5,7 @@ Elk Stack for cloud monitoring
 
 The files in this repository were used to configure the network depicted below.
 
-![https://github.com/tebassett/Elk_Stack/blob/main/Diagrams/ELK%20Project.png]
+![](https://github.com/tebassett/Elk_Stack/blob/main/Diagrams/ELK%20Project.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -60,7 +60,6 @@ A summary of the access policies in place can be found in the table below.
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because automated configuration efficaciously reduces the potential for human error during configuration. It also ensures uniform configuration across a shared resource group. 
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
 - Installs Docker.io
 - Installs Python3-pip
 - Installs Docker's Python Module
