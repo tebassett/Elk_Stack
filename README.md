@@ -42,7 +42,7 @@ The configuration details of each machine may be found below.
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Jumpbox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- 77.179.27.132
+- `MY_PUBLIC_IP`
 
 Machines within the network can only be accessed via SSH through the ansible container on the Jumpbox.
 
@@ -50,10 +50,10 @@ A summary of the access policies in place can be found in the table below.
 
 | Name      | Publicly Accessible | Allowed IP Addresses |
 |-----------|---------------------|----------------------|
-| Jump Box  | SSH Only            | 77.179.27.132        |
+| Jump Box  | SSH Only            | `MY_PUBLIC_IP`       |
 | Web-1     | No                  | 10.0.0.4             |
 | Web-2     | No                  | 10.0.0.4             |
-| Elk Stack | Port 5601 Only      | 77.179.27.132        |
+| Elk Stack | Port 5601 Only      | `MY_PUBLIC_IP`       |
 
 
 ## **Elk Configuration**
