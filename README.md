@@ -108,7 +108,7 @@ Useful commands and info for playbook and config files:
 - `ansible-playbook FILENAME.yml` to run an ansible playbook
 - Don't forget to update the Ansible `hosts` file `/etc/ansible/hosts` to include your `[elk]` machine and the following: `YOUR_ELK_HIDDEN_IP ansible_python_interpreter=/usr/bin/python3`
 
-#TL;DR
+#### **TL;DR**
 1. Ensure you have an `Ansible` container running on your provisioner. Attach to the container.
 2. Make sure you can SSH into each of the machines from your `Ansible` container.
 3. Configure your `Ansible` `host` and `ansible.cfg` files for your two servers and your future `Elk Stack` VM.
