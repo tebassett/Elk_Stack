@@ -107,3 +107,16 @@ Useful commands and info for playbook and config files:
 - `sudo nano SPECIFIC_BEAT-playbook.yml` to edit the playbook file
 - `ansible-playbook FILENAME.yml` to run an ansible playbook
 - Don't forget to update the Ansible `hosts` file `/etc/ansible/hosts` to include your `[elk]` machine and the following: `YOUR_ELK_HIDDEN_IP ansible_python_interpreter=/usr/bin/python3`
+
+#TL;DR
+1. Ensure you have an `Ansible` container running on your provisioner. Attach to the container.
+2. Make sure you can SSH into each of the machines from your `Ansible` container.
+3. Configure your `Ansible` `host` and `ansible.cfg` files for your two servers and your future `Elk Stack` VM.
+4. Create your `files` and `roles` directories in `/etc/ansible`
+5. In the `files` directory, use `touch` to create the configuration files from the examples in the [Ansible](https://github.com/tebassett/Elk_Stack/tree/main/Ansible) directory.
+6. In the `roles` directory, use `touch` to create the playbook files from the examples in the same directory mentioned above.
+7. Run the [dvwa-playbook.yml](https://github.com/tebassett/Elk_Stack/blob/main/Ansible/dvwa-playbook.yml). 
+8. Run the [install-elk.yml](https://github.com/tebassett/Elk_Stack/blob/main/Ansible/install-elk.yml).
+9. Run the [filebeat-playbook.yml](https://github.com/tebassett/Elk_Stack/blob/main/Ansible/filebeat-playbook.yml).
+10. Run the [metricbeat-playbook.yml](https://github.com/tebassett/Elk_Stack/blob/main/Ansible/metricbeat-playbook.yml).
+11. Go to Kibana and check to see if everything worked!
