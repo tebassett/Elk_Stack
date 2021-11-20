@@ -106,4 +106,4 @@ Useful commands and info for playbook and config files:
 - `sudo nano SPECIFIC_BEAT-config.yml` to edit the config file
 - `sudo nano SPECIFIC_BEAT-playbook.yml` to edit the playbook file
 - `ansible-playbook FILENAME.yml` to run an ansible playbook
-- Don't forget to update the Ansible `hosts` file `/etc/ansible/hosts` to include your `[elk]` machine and the following: `YOUR_ELK_HIDDEN_IP ansible_python_interpreter=/usr/bin/python3
+- Don't forget to update the Ansible `hosts` file `/etc/ansible/hosts` to include your `[elk]` machine and the following: `YOUR_ELK_HIDDEN_IP ansible_python_interpreter=/usr/bin/python3`
