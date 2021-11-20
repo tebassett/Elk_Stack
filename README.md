@@ -15,9 +15,8 @@ This document contains the following details:
 - Description of the Topology
 - Access Policies
 - ELK Configuration
-  - Beats in Use
-  - Machines Being Monitored
-- How to Use the Ansible Build
+- Target Machines and Beats
+- Using the Beats Playbooks
 
 
 ## **Description of the Topology**
@@ -72,6 +71,7 @@ The playbook implements the following tasks:
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
 ![](https://github.com/tebassett/Elk_Stack/blob/main/Images/docker_ps_output.PNG)
+
 
 ## **Target Machines & Beats**
 This ELK server is configured to monitor the following machines:
